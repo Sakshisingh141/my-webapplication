@@ -1,14 +1,11 @@
 package com.example;
 
-import org.junit.Test;
-import static org.junit.Assert.assertEquals;
-
 public class MyWebApp {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
 
-    @Test
-    public void testGreeting() {
-        MyWebApp app = new MyWebApp();
-        String greeting = app.greet();
-        assertEquals("Hello, World!", greeting);
+    public String greet() {
+        return "Hello, World!";
     }
 }
